@@ -41,10 +41,11 @@ Array.from(posters).forEach((poster) => {
         alert(`Ви вибрали фільм: ${filmId}`);
     });
 
-    // Обробка події mouseover
-    poster.addEventListener('mouseover', () => {
+   // Обробка події mouseover
+    poster.onmouseover = () => {
         poster.style.border = '2px solid #ff5722';
-    });
+    };
+
 
     // Обробка події mouseout
     poster.addEventListener('mouseout', () => {
